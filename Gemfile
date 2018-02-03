@@ -32,6 +32,7 @@ gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'paperclip', '~> 5.2', '>= 5.2.1'
 gem 'cocoon', '~> 1.2', '>= 1.2.11'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'devise', '~> 4.4', '>= 4.4.1'
 
 
 group :development, :test do
