@@ -5,8 +5,8 @@
         = @recipe.errors.count
         Prevented this recipe from saving
       %ul
-        - @recipe.errors.full_message.each do |msg|
-          %li = msg
+        - @recipe.errors.full_messages.each do |msg|
+          %li= msg
   .panel-body
     = f.input :title, input_html: {class: 'form-control'}
     = f.input :description, input_html: {class: 'form-control'}
@@ -19,7 +19,7 @@
           = f.simple_fields_for :ingredients do |ingredient|
             = render 'ingredient_fields', f: ingredient
           .links
-            = link_to_add_association 'Add Ingredient', f, :ingredients, class: "btn btn-default add-button"
+            = link_to_add_association 'Добавить индигриент', f, :ingredients, class: "btn btn-default add-button"
       
       .col-md-6
         %h3 Directions
@@ -27,7 +27,7 @@
           = f.simple_fields_for :directions do |direction|
             = render 'direction_fields', f: direction
           .links
-            = link_to_add_association 'Add Step', f, :directions, class: "btn btn-default add-button"
+            = link_to_add_association 'Добавить шаг', f, :directions, class: "btn btn-default add-button"
 
          
 
