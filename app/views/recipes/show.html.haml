@@ -23,6 +23,14 @@
             %li= direction.step
 
   .row
+    .col-md-8
+      #Commets
+       
+        %ul
+          = render partial: "comments/comments", locals: {commentable: @recipe}
+          = render partial: "comments/form", locals: {commentable: @recipe}
+
+  .row
     .col-md-12
       = link_to "Назад", root_path, class: "btn btn-default"
       -if user_signed_in?

@@ -3,6 +3,7 @@ class Recipe < ApplicationRecord
 
   has_many :ingredients
   has_many :directions
+  has_many :comments, as: :commentable
 
   accepts_nested_attributes_for :ingredients,
                                  reject_if: proc { |attributes| attributes['name'].blank? },
