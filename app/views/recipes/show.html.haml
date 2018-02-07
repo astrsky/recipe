@@ -22,13 +22,11 @@
           - @recipe.directions.each do |direction|
             %li= direction.step
 
-  .row
-    .col-md-8
+  
+    .col-md-12
       #Commets
-       
-        %ul
-          = render partial: "comments/comments", locals: {commentable: @recipe}
-          = render partial: "comments/form", locals: {commentable: @recipe}
+        = render partial: "comments/comments", locals: {commentable: @recipe}
+        = render partial: "comments/form", locals: {commentable: @recipe}
 
   .row
     .col-md-12
