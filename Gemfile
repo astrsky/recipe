@@ -10,7 +10,6 @@ end
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
 
-
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -34,6 +33,10 @@ gem 'paperclip', '~> 5.2', '>= 5.2.1'
 gem 'cocoon', '~> 1.2', '>= 1.2.11'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'devise', '~> 4.4', '>= 4.4.1'
+gem 'taps'
+gem 'pg'
+
+
 
 
 group :development, :test do
@@ -42,11 +45,11 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'sqlite3'
+  
 end
 
 group :production do
-  gem 'pg'
+  
 end
 
 group :development do
