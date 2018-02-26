@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 Using sipmle_form,cocoon,paper_clip,haml
+* add comments
+https://nameless-coast-60503.herokuapp.com/
